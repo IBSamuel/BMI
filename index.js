@@ -4,7 +4,6 @@ const nope=()=>{
   numericalValue.innerHTML = (squared/bmi).toFixed(2)
   reshow.innerHTML=numericalValue.innerHTML
   let newNumber = numericalValue.innerHTML
-  alert((squared/bmi).toFixed(2))
   if(numericalValue.innerHTML <=18.5){
     advise.innerHTML = `Underweight <small>"Consider speaking with a healthcare professional to develop a healthy eating and exercise plan to help you gain weight in a safe and sustainable way."</small>`
   }
