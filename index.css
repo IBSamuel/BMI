@@ -3,6 +3,26 @@
     margin: 0;
     box-sizing: border-box;
 }
+.fit{
+    background: linear-gradient(#000000, #000000) 50% 50%/calc(100% - 4px) calc(100% - 4px) no-repeat,
+    linear-gradient(105deg, #dbff93 0%, #00ff00 97%);
+border-radius: 0px;
+padding: 9px;
+box-sizing: border-box;
+}
+.calll,.btnnns{
+background: radial-gradient(circle at 100% 100%, transparent 0, transparent 1px, transparent 1px) 0% 0%/5px 5px no-repeat,
+radial-gradient(circle at 0 100%, transparent 0, transparent 1px, transparent 1px) 100% 0%/5px 5px no-repeat,
+radial-gradient(circle at 100% 0, transparent 0, transparent 1px, transparent 1px) 0% 100%/5px 5px no-repeat,
+radial-gradient(circle at 0 0, transparent 0, transparent 1px, transparent 1px) 100% 100%/5px 5px no-repeat,
+linear-gradient(transparent, transparent) 50% 50%/calc(100% - 8px) calc(100% - 10px) no-repeat,
+linear-gradient(transparent, transparent) 50% 50%/calc(100% - 10px) calc(100% - 8px) no-repeat,
+linear-gradient(105deg, #dbff93 0%, #00ff00 97%);
+border-radius: 5px;
+padding: 6px;
+box-sizing: border-box;
+border: none;
+}
 .range{
     /* width: 400px; */
     height: 10px;
@@ -38,4 +58,202 @@ cursor: pointer;
     #calculat{
         word-spacing: 8px;
     }
+}
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    /* justify-content: center; */
+  }
+  
+  .wrapper .icon {
+    position: relative;
+border-radius: 50%;
+    -webkit-box-shadow:0px 0px 183px 44px rgba(23,240,3,0.43);
+    -moz-box-shadow: 0px 0px 183px 44px rgba(23,240,3,0.43);
+    box-shadow: 0px 0px 183px 44px rgba(23,240,3,0.43);
+    /* box-shadow: rgba(0, 0, 0, 0.5) 26px 26px 52px 0px, rgba(58, 58, 58, 0.376) -26px -26px 52px 0px; */
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#00ff00;
+    flex-direction: column;
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    border: 100px;
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: rgb(26, 26, 26);
+    box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 6px 0px inset, rgba(58, 58, 58, 0.376) -3px -3px 6px 0px inset;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 6px 0px inset, rgba(58, 58, 58, 0.376) -3px -3px 6px 0px inset;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background: #24f21d;
+    border-radius: 50%;  
+    color: #fff;
+  }
+  
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background: #24f21d;
+    border-radius: 50%;  
+    color: #fff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #24f21d;
+    border-radius: 50%;  
+  color: white;  }
+
+  .card-title{
+    font-size: 400px;
+    letter-spacing: -40px;
+    font-weight: 300;
+    color: white;
+    text-shadow: rgba(94,255,0,0.81) 0px 0px 84px;
+  }
+  .card-title {
+    animation: neonAnim 2s alternate-reverse infinite;
+    color: #00FF49;
+}
+@media screen and (max-width: 688px) {
+   .card-title{
+    font-size: 250px;
+    letter-spacing: -30px;
+   }
+}
+@keyframes neonAnim {
+    from {
+        text-shadow:
+          0 0 16px rgba(0, 255, 73, .7),
+          0 0 46px rgba(0, 255, 73, .7),
+          0 0 106px rgba(0, 255, 73, .7);
+      }
+      to {
+        text-shadow:
+          0 0 11px rgba(0, 255, 73, .7),
+          0 0 26px rgba(0, 255, 73, .7),
+          0 0 66px rgba(0, 255, 73, .7);
+      }
+}
+.bbbn{
+  background-color: #000000;
+  border: none;
+}
+/* Animated Input */
+.inputbox {
+  position: relative;
+  width: 196px;
+}
+
+.inputbox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 10px 10px;
+  font-size: 1em;
+  color: #8f8f8f;
+  letter-spacing: 00.05em;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.inputbox input:valid ~span,
+.inputbox input:focus ~span {
+  color: #00ff00;
+  transform: translateX(-10px) translateY(-34px);
+  font-size: 0,75em;
+}
+
+.inputbox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background:#00ff00;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.inputbox input:valid ~i,
+.inputbox input:focus ~i {
+  height: 44px;
+}
+.classNeeded{
+  background: #000000;
+}
+.meme{
+  color: white;
+  text-shadow: rgba(0,255,60,0.93) 0px 0px 38px;
+}
+.slecting button{
+  -webkit-box-shadow:-200px -121px 115px 38px rgba(0,250,0,0.51);
+  -moz-box-shadow: -200px -121px 115px 38px rgba(0,250,0,0.51);
+  box-shadow: -200px -121px 115px 38px rgba(0,250,0,0.51);
 }
