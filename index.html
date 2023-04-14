@@ -29,9 +29,6 @@
         <div class="navbar-text text-center">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-secondary me-5" aria-current="page" href="#">Service</a>
-            </li>
-            <li class="nav-item">
               <!-- Button trigger modal -->
               <button type="button" class="nav-link text-secondary mx-auto bbbn" data-bs-toggle="modal"
                 data-bs-target="#staticBackdrop">
@@ -100,7 +97,16 @@
 </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link btn calll me-5 ms-5" href="#">Contact Imbibe</a>
+              <a class="nav-link btn calll me-5 ms-5" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contact Imbibe</a>
+              <div class="dropdown">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/samuel-oluwatomisin-2b1190253"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png" class="w-25" alt=""></a></li>
+                  <li><a class="dropdown-item" href="https://wa.me/+2349134256192"><img src="https://logolook.net/wp-content/uploads/2021/06/Logo-Whatsapp.png" class="w-25" alt=""></a></li>
+
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -128,12 +134,12 @@
       <section class="m-2 mt-5">
 
         <div>
-          <div class="calll d-inline me-5">
+          <div class="calll d-inline me-2">
             <span class="text-light">Height</span>
             <span class="text-secondary me-5 calll">Centimeter</span>
           </div>
           <div class="calll d-inline">
-            <output id="num" class="me-auto border-bottom border-success  ms-5">1.54</output>
+            <output id="num" class="me-auto border-bottom border-success ms-3">1.54</output>
             <span>cm</span><br>
           </div>
 
@@ -144,7 +150,7 @@
         <br>
         <br>
         <div>
-          <div class="calll d-inline me-5">
+          <div class="calll d-inline">
             <span class="text-light alertt">Weight</span>
             <span class="calll me-5">Killogram</span>
           </div>
@@ -182,7 +188,7 @@
         </div>
 
       </div>
-      <small class="text-secondary d-sm-none d-md-block">| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+      <small class="text-secondary" id="ruler">| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
         | | | | | | | | | | | | | | | |
         | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
         | |

@@ -167,8 +167,11 @@ border-radius: 50%;
 }
 @media screen and (max-width: 688px) {
    .card-title{
-    font-size: 250px;
-    letter-spacing: -30px;
+    font-size: 190px;
+    letter-spacing: -20px;
+   }
+   #ruler{
+    display: none;
    }
 }
 @keyframes neonAnim {
