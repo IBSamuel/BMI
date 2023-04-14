@@ -155,7 +155,8 @@ border-radius: 50%;
   color: white;  }
 
   .card-title{
-    font-size: 400px;
+    text-align: center;
+    font-size: 300px;
     letter-spacing: -40px;
     font-weight: 300;
     color: white;
@@ -167,7 +168,7 @@ border-radius: 50%;
 }
 @media screen and (max-width: 688px) {
    .card-title{
-    font-size: 190px;
+    font-size: 170px;
     letter-spacing: -20px;
    }
    #ruler{
